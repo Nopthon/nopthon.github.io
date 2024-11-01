@@ -1,0 +1,87 @@
+/* 全局 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6d3be;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 标题 */
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+/* 主容器布局 */
+.int_main {
+    display: flex;
+}
+
+/* 左侧导航栏样式 */
+.sidebar {
+    width: 220px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed;
+    /* header高度 */
+    top: 70px;
+    bottom: 0;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 右侧内容区样式 */
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* 隐藏内容块的默认样式 */
+.section {
+    display: none;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #333;
+}
+
+.section p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 段落样式 */
+section {
+    margin-bottom: 30px;
+}
