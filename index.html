@@ -1,35 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
   <head>
-    <meta charset="UTF-8">
-      <title>Trash_can</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="keywords" content="college-freshman,🤔,math,coding" />
-      <meta name="author" content="zyh a.k.a. Nopthon">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  </head>
-
-  <body style="background-color: #FAEBD7;">
-	  <p>这是一个nju-er的个人网站，不过他还没想好在这里再多写些什么</p>
-    <p>把最近整理的几道微积分题目放这了，答案还没完善，谁来帮帮我😨</p>
-    <a href="https://nopthon.notion.site/vjf-1102073e525780dc9346c42ff713313c?pvs=4"> Click here to see see</a>
-    <br>
-    这是一个输入框: <input type="text" name="a" value="vme50😋">
-    <button onclick="myfunction()" title="是真的，我不会写后端">提交是没用的，现在什么都不会弹出了😋</button>
-    <p id="vmefifty"></p>
-    <p id="vmewushi"></p>
-
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTC7Y7VFZS"></script>
     <script>
-      var x=0;
-    function myfunction(){
-      x=x+1;
-      if(x==1){document.getElementById("vmefifty").innerHTML="你不准点了😤";}
-      if(x==5){document.getElementById("vmewushi").innerHTML="😡😡😡😡😡😡😡😡😡😡";alert("不要点了\n 😡😡😡😡😡😡😡😡😡😡")}
-      if(x==10){alert("你已经点了10次了😡😡😡😡😡😡😡😡😡😡");}
-      
-    }
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZTC7Y7VFZS');
     </script>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🗑️Trashbin🗑️</title>
+        <link rel="stylesheet" href="put_a_rose_on_the_shit.css">
+        </head>
+        <body>
+          <header>
+            <h1>Nopthon's Trashcan (maybe?)</h1>
+          </header>
+          <div class="int_main">
+            <nav class="sidebar">
+              <ul>
+                <li>
+                  <a href="#section1" onclick="show('section1')">Intro</a>
+                </li>
+                <li>
+                  <a href="#section2" onclick="show('section2')">我在这个网站里塞了什么</a>
+                </li>
+                <li>
+                  <a href="#section3" onclick="show('section3')">还有别的吗</a>
+                </li>
+                <li>
+                  <a href="#section4" onclick="show('section4')"></a>
+                </li>
+                <li>
+                  <a href="#section5" onclick="show('section5')"></a>
+                </li>
+              </ul>
+            </nav>
+            <main class="content">
+              <section id="section1" class="section">
+                <h2>Intro</h2>
+                <p>给毛坯房修缮了一下，现在它像一个正经的网站了。</p>
+              </section>
+              <section id="section2" class="section">
+                <h2>我在这个网站里塞了什么</h2>
+                <p>
+                  <a href="http://nopthon.notion.site">学习资料（确信）</a>
+                </p>
+                <p></p>
+              </section>
+              <section id="section3" class="section">
+                <h2>没有了</h2>
+                <p>真的</p>
+                <p>但我还是保留了这个输入框: 
+                  <input type="text" name="a" value="vme50😋">
+                  </p>
+                  <button onclick="vme50function()" title="是真的，我不会写后端">提交是没用的😋</button>
+                  <p id="vmefifty"></p>
+                  <p id="vmewushi"></p>
+                </section>
+                <section id="section4" class="section">
+                  <h2></h2>
+                  <p></p>
+                </section>
+                <section id="section5" class="section">
+                  <h2></h2>
+                  <p></p>
+                </section>
+              </main>
+            </div>
+            <script>
+        // 这一段script是我抄的，我不会写js，我爬
+        function show(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+        window.onload = function() {
+            show('section1');
+        };
 
-  </body>
-</html>
+
+        var x=0;
+        function vme50function(){
+            x=x+1;
+            if(x==1){document.getElementById("vmefifty").innerHTML="你不准点了😤";}
+            if(x==5){document.getElementById("vmewushi").innerHTML="😡😡😡😡😡😡😡😡😡😡";alert("不要点了\n 😡😡😡😡😡😡😡😡😡😡")}
+            if(x==10){alert("你已经点了10次了😡😡😡😡😡😡😡😡😡😡");}
+        }
+
+    </script>
+          </body>
+        </html>
